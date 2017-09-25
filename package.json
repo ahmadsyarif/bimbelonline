@@ -1,0 +1,11 @@
+{
+  "name": "bimbelonline",
+  "version": "1.0.0",
+  "description": "bimbel online",
+  "main": "index.js",
+  "scripts": {
+    "test": "-debug"
+  },
+  "author": "asyarif",
+  "license": "ISC"
+}
