@@ -4,9 +4,16 @@ const app = express();
 
 app.use(express.static('public'));
 app.get('/apiv1',function(req,res){
-    var responseData = simulation.getQuestion(req.query);
+    var mode = req.query.mode;
+    var responseData ;
+    switch(mode){
+        case 'simulation':
+            responseData = simulation.getResponse(req.query);
+            break;
+    }
     res.send(responseData);
     console.log(req.query);
+    console.log(responseData);
 });
 
 
